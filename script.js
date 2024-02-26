@@ -17,3 +17,29 @@ add('pizza', 9);
 add('ham', 4);
 
 console.log('The CARTS array:\n', ...cart);
+
+// ==============================================
+// =================TOP LEVEL AWAIT==============
+// ==============================================
+// console.log('Start fetching');
+
+// const res = await fetch(`https://jsonplaceholder.typicode.com/posts`);
+// const data = await res.json();
+// console.log(...data);
+
+// // this will not run until the fetch is complete
+// console.log('Something after...');
+
+const getLastPost = async function () {
+  const res = await fetch(`https://jsonplaceholder.typicode.com/posts`);
+  const data = await res.json();
+
+  return { title: data.at(-1).title, text: data.at(-1).body };
+};
+
+// Not a very clean version
+// const lastPost = getLastPost();
+// lastPost.then(last => console.log(last));
+
+const lastPost2 = await getLastPost();
+console.log(lastPost2);
