@@ -4,12 +4,17 @@
   "description": "",
   "main": "clean.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "rm -rf .parcel-cache && parcel",
+    "build": "rm -rf .parcel-cache && parcel build"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "leaflet": "^1.9.4",
     "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "parcel": "^2.11.0"
   }
 }
