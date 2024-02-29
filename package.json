@@ -2,11 +2,11 @@
   "name": "starter",
   "version": "1.0.0",
   "description": "",
-  "main": "clean.js",
+  "source": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "rm -rf .parcel-cache && parcel",
-    "build": "rm -rf .parcel-cache && parcel build"
+    "start": "parcel",
+    "build": "parcel build"
   },
   "author": "",
   "license": "ISC",
