@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "source": "index.html",
+  "browserlist": "last 2 versions, > 0.5% and ie >= 11",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel",
@@ -11,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/runtime-corejs2": "^7.24.0",
     "leaflet": "^1.9.4",
     "lodash-es": "^4.17.21"
   },

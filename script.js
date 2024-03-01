@@ -1,3 +1,5 @@
+import '@babel/runtime-corejs2';
+
 // Importing module
 // import { addToCart, totalPrice as price, tq } from './shoppingCart.js';
 
